@@ -1,0 +1,20 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ2hvbGkiLCJpYXQiOjE2ODIyNTM5NDcsImV4cCI6MTY4MjI1Mzk2Mn0.c0jhQykojc66ZZPqy-hsibPEBMRC6NmU1oZ_Tjdz334
+
+###
+
+POST http://localhost:5000/token
+content-type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZ2hvbGkiLCJpYXQiOjE2ODIyNTQyMjl9.IO07iYXCDJG4lFft_Kyd4-pHDv5BrYBAUSn8_xV3IzE"
+}
+
+###
+
+POST http://localhost:5000/login
+content-type: application/json
+
+{
+    "username": "gholi"
+}
